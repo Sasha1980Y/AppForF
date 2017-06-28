@@ -12,9 +12,11 @@
 		7F3869E81F028494006F9207 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3869E61F028494006F9207 /* Main.storyboard */; };
 		7F3869EA1F028494006F9207 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F3869E91F028494006F9207 /* Assets.xcassets */; };
 		7F3869ED1F028494006F9207 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F3869EB1F028494006F9207 /* LaunchScreen.storyboard */; };
+		ADB71FC4C1DF658B5EB960AF /* Pods_AppForF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD5234EEF41D9AC8C13E9E1 /* Pods_AppForF.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BB5A79EF5E59051B18F796E /* Pods-AppForF.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppForF.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppForF/Pods-AppForF.release.xcconfig"; sourceTree = "<group>"; };
 		7F3869DF1F028493006F9207 /* AppForF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppForF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F3869E21F028493006F9207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F3869E41F028493006F9207 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,9 @@
 		7F3869E91F028494006F9207 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F3869EC1F028494006F9207 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F3869EE1F028494006F9207 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FACBA411F029064008B319E /* AppForF.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppForF.entitlements; sourceTree = "<group>"; };
+		C106C7936B2149E910D3A832 /* Pods-AppForF.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppForF.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppForF/Pods-AppForF.debug.xcconfig"; sourceTree = "<group>"; };
+		FBD5234EEF41D9AC8C13E9E1 /* Pods_AppForF.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppForF.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB71FC4C1DF658B5EB960AF /* Pods_AppForF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4EE6B786D97A0C64790CC3F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C106C7936B2149E910D3A832 /* Pods-AppForF.debug.xcconfig */,
+				1BB5A79EF5E59051B18F796E /* Pods-AppForF.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7F3869D61F028493006F9207 = {
 			isa = PBXGroup;
 			children = (
 				7F3869E11F028493006F9207 /* AppForF */,
 				7F3869E01F028493006F9207 /* Products */,
+				4EE6B786D97A0C64790CC3F8 /* Pods */,
+				B448DF38C3D5B708579A5169 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,7 @@
 		7F3869E11F028493006F9207 /* AppForF */ = {
 			isa = PBXGroup;
 			children = (
+				7FACBA411F029064008B319E /* AppForF.entitlements */,
 				7F3869E21F028493006F9207 /* AppDelegate.swift */,
 				7F3869E41F028493006F9207 /* ViewController.swift */,
 				7F3869E61F028494006F9207 /* Main.storyboard */,
@@ -64,6 +82,14 @@
 			path = AppForF;
 			sourceTree = "<group>";
 		};
+		B448DF38C3D5B708579A5169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBD5234EEF41D9AC8C13E9E1 /* Pods_AppForF.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7F3869F11F028494006F9207 /* Build configuration list for PBXNativeTarget "AppForF" */;
 			buildPhases = (
+				04431A5F714DBE9BF7736FB8 /* [CP] Check Pods Manifest.lock */,
 				7F3869DB1F028493006F9207 /* Sources */,
 				7F3869DC1F028493006F9207 /* Frameworks */,
 				7F3869DD1F028493006F9207 /* Resources */,
+				3BBADD2EF3E6BE70362162BF /* [CP] Embed Pods Frameworks */,
+				EA78B5AA4FC426853407212A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +125,13 @@
 				TargetAttributes = {
 					7F3869DE1F028493006F9207 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = DFT9FL7J65;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -130,6 +165,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04431A5F714DBE9BF7736FB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3BBADD2EF3E6BE70362162BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppForF/Pods-AppForF-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA78B5AA4FC426853407212A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppForF/Pods-AppForF-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7F3869DB1F028493006F9207 /* Sources */ = {
@@ -260,24 +343,34 @@
 		};
 		7F3869F21F028494006F9207 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C106C7936B2149E910D3A832 /* Pods-AppForF.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppForF/AppForF.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DFT9FL7J65;
 				INFOPLIST_FILE = AppForF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Alex.AppForF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		7F3869F31F028494006F9207 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BB5A79EF5E59051B18F796E /* Pods-AppForF.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppForF/AppForF.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DFT9FL7J65;
 				INFOPLIST_FILE = AppForF/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Alex.AppForF;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -301,6 +394,7 @@
 				7F3869F31F028494006F9207 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
